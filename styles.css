@@ -1,0 +1,84 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex; /* Flexbox for navigation items */
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+    display: grid; /* Using Grid for layout */
+    grid-template-columns: 1fr; /* Single-column layout by default */
+    gap: 1rem;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f4f4f4;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablet view */
+@media (min-width: 600px) {
+    section {
+        grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns for even larger screens */
+    }
+}
